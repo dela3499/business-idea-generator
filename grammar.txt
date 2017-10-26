@@ -1,0 +1,13 @@
+S -> Company 'for' Market | Modifier 'version of' Company | 'Improve' Company 'with' Concept | 'Use' Concept 'to help' Market | 'Create a' Resource 'for' Noun | 'Improve the' Quality 'of' Company | 'Improve' Need 'with' Tool | 'Improve' Need 'for' Market | 'Help' Market Improve
+
+Tool -> Company | Resource | Concept
+Noun -> Company | Market | 
+Company -> 'Uber' | 'Google' | 'Facebook' | 'Youtube'
+Market -> 'golfers' | 'programmers' | 'home cooks' | 'nomads' | 'writers' | 'researchers' | 'engineers' | 'minimalists'
+Modifier -> 'absurd' | 'friendlier' | 'space-age' | 'simpler' | 'funnier' | 'safer' | 'more exciting'
+Concept -> 'context-free grammar' | 'deep learning' | 'physics simulation'
+Resource -> 'community' | 'book' | 'market' | 'toolkit' | 'training tool' | 'search engine' | 'knowledge base' | 'up-to-date list' | 'messaging system' | 'notification system' | 'newsletter' | 'club'
+Quality -> 'speed' | 'cost' | 'quality'
+Need -> 'food' | 'shelter' | 'health' | 'fitness' | 'romance' | 'love' | 'friendship' | 'learning'
+Improve -> 'learn faster' | 'reduce frustration' | '10x their results' | 'earn more' | 'meet friends' | 'waste less time'
+

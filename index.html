@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Business Idea Generator</title>
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="underscore.min.js"></script>
+	<script src="mithril.js"></script>
+	
+	<!-- <link rel="stylesheet" type="text/css" href="input.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="main.css"> -->
+</head>
+
+<style>
+	body, html {
+		height: 100%;
+		overflow-y: hidden;
+		margin: 0;
+		/*width: 100%;*/
+		/*box-sizing: border-box;*/
+		font-family: Arial;
+		font-size: 20px;
+		line-height: 1.5em;
+	}
+
+	body {
+	}
+
+	textarea.input {
+		width: 50vw;
+		height: 100vh;
+		padding: 50px;
+		box-sizing: border-box;
+		font-family: Arial;
+		font-size: 20px;
+		line-height: 1.5em;
+	}
+
+	.results {
+		padding: 50px;
+		box-sizing: border-box;
+		width: 50vw;
+		height: 100vh;
+		overflow-y: scroll;
+	}
+	
+
+	.results, .input {
+		float:left;
+	}
+
+	#button { 
+		position: absolute;
+		right: calc(50vw + 50px);
+		top: 50px;
+	}
+
+</style>
+
+<body>
+	<div id="result"></div>
+	<button id="button" onclick="update()">generate</button>
+</body>
+
+<script src="app.js"></script>
+
+
