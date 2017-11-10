@@ -140,7 +140,11 @@ function generateSentence(rules) {
     if (word[0] !== "#") {
       return word
     } else {
-      return randomChoice(rules[word])
+      if (!(word in rules)) {
+        console.log(word + " not found (typo?)")
+        return word
+      } else
+        return randomChoice(rules[word])
     }
   }
   
@@ -152,14 +156,16 @@ function generateSentence(rules) {
     return newWords
   }
   
-  words = randomChoice(rules['#Start']).split(" ")
-  // console.log(randomChoice(rules['#Start']).split(" "))
-  
+
+  sentence = randomChoice(rules['#Start'])
+
   for (j = 0; j < 10; j++) {   
-    words = replaceWords(words)
+    initialWords = sentence.split(" ")
+    newWords = replaceWords(initialWords)
+    sentence = newWords.join(" ")
   }
-  
-  return words.join(" ")
+
+  return sentence
   
 }
 
